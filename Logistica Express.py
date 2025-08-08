@@ -1,5 +1,5 @@
 class Repartidor:
-    def __init__(self, Nombre, Paquete, zona):
+    def __init__(self, Nombre, Paquete, Zona):
         self.Nombre = Nombre
         self.Paquete = Paquete
-        self.zona = zona
+        self.Zona = Zona
