@@ -3,3 +3,6 @@ class Repartidor:
         self.Nombre = Nombre
         self.Paquete = Paquete
         self.Zona = Zona
+
+    def __str__(self):
+        return (f"{self.Nombre} - {self.Paquetes} paquetes - Zona: {self.Zona}")
