@@ -6,3 +6,7 @@ class Repartidor:
 
     def __str__(self):
         return (f"{self.Nombre} - {self.Paquetes} paquetes - Zona: {self.Zona}")
+
+class Mensajeria:
+    def __init__(self):
+        self.Repartidors = []
