@@ -29,3 +29,17 @@ class Mensajeria:
             menores = [x for x in lista[1:] if x.Paquete < pivote.Paquete]
 
             return QuickSort(mayores) + [pivote] + iguales + QuickSort(menores)
+
+        self.Repartidors = QuickSort(self.Repartidors)
+        print("Repartidor Ordenada por cantidades correctamente")
+
+    def Buscar(self, nombre):
+        for x in self.Repartidors:
+            if x.Nombre.lower() == nombre.lower():
+                return x
+            return None
+
+    def mostrar(self):
+        print("Ranking de repartidores")
+        for x in self.Repartidors:
+            print(x)
