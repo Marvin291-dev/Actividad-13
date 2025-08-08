@@ -10,3 +10,11 @@ class Repartidor:
 class Mensajeria:
     def __init__(self):
         self.Repartidors = []
+
+    def AgregarRepartidor(self, Repartidor):
+        for i in self.Repartidors:
+            if i.Nombre.lower() == Repartidor.Nombre.lower():
+                print(f"Ya existe este repartidor {Repartidor.Nombre}")
+                return
+            self.Repartidors.append(Repartidor)
+            print("Repartidor agregado correctamente")
